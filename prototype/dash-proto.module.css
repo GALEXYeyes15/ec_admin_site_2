@@ -133,9 +133,8 @@ header {
 }
 
 .profile-title {
-    color:#fffcee;
+    color:#fffcee93;
     font-size: small;
-    opacity: 60%;
 }
 
 
@@ -144,8 +143,6 @@ header {
     width: 200px;
     background-color: #333;
     color: #fff;
-    padding: 20px;
-    height: 100vh;
 }
 
 .sidebar a {
@@ -158,6 +155,7 @@ header {
 .sidebar {
     padding-top: 100px;
     border-right: solid #45247b 1px;
+    height: 100vh;
 }
 
 .sidebar-nav-tabs {
@@ -168,15 +166,35 @@ header {
 }
 
 .sidebar-nav-tab-item {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding: 4px 24px;
+    gap: 36px;
     
+
+}
+
+.sidebar-nav-tab-item:hover {
+    background-color: #1d1d1d;
+    border-radius: 16px;
 }
 
 .sidebar-nav-tab-item-icon {
-
+    width: 20px;
+    height: 20px;
 }
 
 .sidebar-nav-tab-item-text {
+    font-size: 25px;
+}
 
+.sidebar-nav-tab-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px;
 }
 
 
