@@ -26,7 +26,7 @@ header {
 .channel-search{
     display: flex;
     background-color: #1d1d1d;
-    color: #fffcee88;
+    color: #fffceea4;
     height: 35px;
     width: 750px;
     border-radius: 35px;
@@ -36,24 +36,25 @@ header {
     
 }
 
-.left-header .right-header {
+.left-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 36px;
+    padding-left: 24px;
 }
 
-.header-logo {
-    width: 30;
-    height: 30;
+.header-logo{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .header-collapse {
-    width: 30;
-    height: 30;
+    width: 24px;
+    height: 24px;
 }
-
 
 /*Profile*/
 .profile {
@@ -112,7 +113,7 @@ header {
 }
 
 .sidebar {
-    padding-top: 70px;
+    padding-top: 100px;
     border-right: solid #45247b 1px;
 }
 
@@ -123,7 +124,7 @@ header {
     padding: 20px;
     flex-grow: 1;
     background-color: #333;
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 .analytics-preview {
