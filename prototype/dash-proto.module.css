@@ -11,7 +11,7 @@ body {
     flex-direction: row;
 }
 
-/*header*/
+/*HEADER*/
 header {
     display: flex;
     position: fixed;
@@ -36,25 +36,68 @@ header {
     
 }
 
-.left-header {
+.left-header, .right-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 36px;
     padding-left: 24px;
+    padding-right: 48px;
 }
 
-.header-logo{
+.left-header {
+    gap: 36px;
+}
+
+.right-header {
+    gap: 20px;
+}
+
+.left-header-logo{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.header-collapse {
+.left-header-collapse {
     width: 24px;
     height: 24px;
 }
+
+.right-header-help { 
+    width: 20px;
+    height: 20px;
+}
+
+.right-header-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fffcee;
+    border-radius: 21px;
+    border: solid #fffcee8f 1px;
+    padding: 8px 15px;
+    gap:12px;
+
+}
+
+.right-header-upload-text {
+    font-size: 15px;
+}
+
+.right-header-upload-icon {
+   width: 15px;
+   height: 15px; 
+}
+
+.right-header-profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    object-fit: fill;
+}
+
 
 /*Profile*/
 .profile {
@@ -115,6 +158,25 @@ header {
 .sidebar {
     padding-top: 100px;
     border-right: solid #45247b 1px;
+}
+
+.sidebar-nav-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px;
+}
+
+.sidebar-nav-tab-item {
+    
+}
+
+.sidebar-nav-tab-item-icon {
+
+}
+
+.sidebar-nav-tab-item-text {
+
 }
 
 
