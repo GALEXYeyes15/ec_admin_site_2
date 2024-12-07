@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
+    background-color: #333;
     margin: 0;
 }
 
@@ -103,7 +104,7 @@ header {
 .profile {
     color: #fffcee;
     flex-direction: column;
-    padding: 20px;
+    padding: 25px 20px 20px;
     background-color: #333;
     text-align: center;
     width: 200px;
@@ -139,10 +140,13 @@ header {
 
 
 /*Sidebar*/
-.sidebar-nav {
-    width: 200px;
-    background-color: #333;
-    color: #fff;
+.sidebar {
+    margin-top: var(--header-height, 80px);
+    position: fixed;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    border-right: solid #fffcee2d 1px;
 }
 
 .sidebar a {
@@ -152,10 +156,15 @@ header {
     margin: 10px 0;
 }
 
-.sidebar {
-    padding-top: 100px;
-    border-right: solid #45247b 1px;
-    height: 100vh;
+
+.sidebar-nav, .settings{
+    width: 200px;
+    background-color: transparent;
+    color:#fffcee;
+}
+
+.settings {
+    margin-top: auto;
 }
 
 .sidebar-nav-tabs {
@@ -167,7 +176,7 @@ header {
 
 .sidebar-nav-tab-item {
     width: 100%;
-    background-color: #333;
+    background-color: transparent;
     display: flex;
     align-items: center;
     padding: 4px 24px;
@@ -190,32 +199,44 @@ header {
     font-size: 25px;
 }
 
-.sidebar-nav-tab-settings {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 14px;
-}
-
 
 /*Main Content*/
 .main-content {
     color: #fffcee;
     padding: 20px;
     flex-grow: 1;
-    background-color: #333;
+    background-color: transparent;
     padding-top: 100px;
+    margin-left: 250px;
 }
 
 .analytics-preview {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.preview-card {
-    color: #141000;
-    background-color: #fff;
+.preview {
+    color: #fffcee;
+    background-color: transparent;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
+    border: solid #fffcee2d .5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px
+}
+
+.page-name {
+    font-size: 24px;
+    font-weight: 100;
+    padding: 0px 10px 30px;
+}
+
+.latest-upload {
+    height: 500px;
+
+}
+
+.published-uploads {
+    height: 300px;
 }
