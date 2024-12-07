@@ -1,2 +1,36 @@
 /*Uploads Content*/
 
+.page-name {
+    border-bottom: solid rgba(255, 255, 255, 0.209) .5px;
+}
+
+.upload-item {
+    display: flex;
+    margin: 0;
+    border-bottom: solid rgba(255, 255, 255, 0.209) .5px;
+    padding: 18px 72px;
+
+}
+
+.upload-item-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+
+}
+
+.upload-item-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 36px;
+}
+
+.upload-item-text-title {
+    font-size: 15px;
+    padding-bottom: 8px;
+}
+
+.upload-item-text-desc {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.355);
+}
