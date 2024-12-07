@@ -1,3 +1,20 @@
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    margin: 0;
+}
+
+/*Content*/
+.content{
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+}
+
+
 /*HEADER*/
 header {
     display: flex;
@@ -127,7 +144,7 @@ header {
 
 /*Sidebar*/
 .sidebar {
-    margin-top: var(--header-height, 62px);
+    margin-top: var(--header-height, 80px);
     position: fixed;
     height: calc(100vh - 85px);
     display: flex;
@@ -184,3 +201,19 @@ header {
 .sidebar-nav-tab-item-text {
     font-size: 25px;
 }
+
+/*Content*/
+.main-content {
+    color: #fffcee;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: transparent;
+    padding-top: 100px;
+    margin-left: 250px;
+}
+.page-name {
+    font-size: 24px;
+    font-weight: 100;
+    padding: 0px 10px 30px;
+}
+
