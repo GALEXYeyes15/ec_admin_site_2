@@ -7,6 +7,7 @@
     <title>Admin</title>
     <link rel="stylesheet" href="comp-proto.module.css">
     <link rel="stylesheet" href="dash-proto.module.css">
+    <script src="script-proto.js"></script>
 </head>
 <body>
     <header>
@@ -16,13 +17,23 @@
             
         </div>
         <div class="channel-search"> Search </div>
-        <div class ="right-header">
+        <div class="right-header">
             <img class="right-header-help" src="./img/header_images/help_icon.png">
+          
             <div class="right-header-upload">
-                <div class="right-header-upload-text">Upload</div>
-                <img class="right-header-upload-icon" src="./img/header_images/upload_icon.png">
+              <div class="right-header-upload-text">Upload</div>
+              <img class="right-header-upload-icon" src="./img/header_images/upload_icon.png">
+          
+              <!-- Add your upload form inside this section -->
+              <form id="uploadForm" enctype="multipart/form-data" style="display: none;">
+                <input type="file" id="fileInput" name="file" />
+                <button type="button" id="uploadButton">Upload</button>
+              </form>
+              <div id="uploadStatus"></div>
             </div>
-            <img class="right-header-profile" src="./img/profile-image.png"></div>
+          
+            <img class="right-header-profile" src="./img/profile-image.png">
+        
         </div>
     </header>
 

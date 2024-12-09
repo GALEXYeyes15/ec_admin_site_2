@@ -82,17 +82,39 @@ header {
     border-radius: 21px;
     border: solid #fffcee8f 1px;
     padding: 8px 15px;
-    gap:12px;
 
 }
 
 .right-header-upload-text {
     font-size: 15px;
+    padding-right: 12px;
 }
 
 .right-header-upload-icon {
    width: 15px;
    height: 15px; 
+}
+
+#uploadForm {
+    margin-top: 10px;
+}
+  
+#fileInput {
+    display: block;
+    margin: 10px 0;
+}
+  
+#uploadButton {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#uploadButton:hover {
+    background-color: #2563eb;
 }
 
 .right-header-profile {
